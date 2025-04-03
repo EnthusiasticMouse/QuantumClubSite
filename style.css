@@ -14,24 +14,24 @@ body{
     0 0 / 50px 50px;
  }
 h1{ 
-    position: absolute;
+    color: black;
     padding: 0;
     font-size: 4rem;
+    text-shadow: -5px 0 1px rgb(77, 169, 175), -10px 0 1px rgb(115, 179, 86),-17px 0 1px rgb(223, 102, 80);
 }
-#chromaticAberation{
+#titleDiv{
     width: 1150px;
     height: 250px;
     background-color: #FAFAFA;
     margin: 0 auto;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: darkslategrey 4px dashed;
 }
 #blochsphere{
-    margin-right: 20px;
-    float: right;
     border: none;
     outline: none;
-    cursor: pointer;
 }
 .textBox{
     width: 1150px;
@@ -70,10 +70,53 @@ h1{
     to {filter: hue-rotate(360deg)}
   }
 
-#socials{
+#clickMe{
     display: flex;
     justify-content: left;
     align-items: center;
     gap: 25px;
     cursor: pointer;
+}
+#allContainer{
+    margin: 0 auto;
+    perspective: 5000px;
+    width: 1150px;
+}
+#boxToFlip{
+  position: relative;
+  width: 1150px;
+  height: 280px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+#frontface, #backface{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+  
+  /* Style the back side */
+#backface{
+    color: white;
+    transform: rotateY(180deg);
+}
+
+#backBtn{
+    top: 15px;
+    position: absolute;
+    cursor: pointer;
+    width: 70px;
+}
+#socials{
+    padding-top: 30px;
+    color: black;
+    height: 100%;
+}
+#socials >img{
+    cursor: pointer;
+}
+#socials > img:hover{
+    transform: scale(120%);
 }

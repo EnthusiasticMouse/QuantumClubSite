@@ -5,41 +5,45 @@
   </head>
   <body>
     <div id="particles-js"></div>
-    <div id="chromaticAberation">
-      <h1 class="title"> Quantum Computing Club! </h1>
-      <h1 class="title"> Quantum Computing Club! </h1>
-      <h1 class="title"> Quantum Computing Club! </h1>
-      <h1 class="title"> Quantum Computing Club! </h1>
-      <h1 class="title"> Quantum Computing Club! </h1>
-      <h1 class="title"> Quantum Computing Club! </h1>
-      <h1 class="title"> Quantum Computing Club! </h1>
-      <h1 class="title"> Quantum Computing Club! </h1>
-      <h1 class="title"> Quantum Computing Club! </h1>
-      <h1 class="title"> Quantum Computing Club! </h1>
-      <h1 class="title"> Quantum Computing Club! </h1>
+    <div id="titleDiv">
       <h1 class="title"> Quantum Computing Club! </h1>
       <iframe id="blochsphere" width="250px" height="250px" src="./blochsphere/index.html" title="bloch sphere"></iframe>
     </div>
     <div class="textBox" >
       <div>
         <h2>Hello!</h2>
-        <p>Quantum Computing club is a new club starting September 2025 focused on the interdiciplinary <span class="rainbow" >Exploration</span> of quantum information theory, quantum mechanics, quantum machine learning and general quantum computing gubbins!</p>
+        <p>Quantum Computing club is a new club starting September 2025 focused on the interdisciplinary <span class="rainbow" >Exploration</span> of quantum information theory, quantum mechanics, quantum machine learning and general quantum computing gubbins!</p>
         <img src="newtons.gif">
       </div>
     </div>
-    <div class="textBox">
-      <div id="what">
-        <h2>What will we be doing?</h2>
-        <ul>
-          <li>Student Run Workshops and Talks!</li>
-          <li>Qiskit and Q# Sessions!</li>
-          <li>Guest Speakers!</li>
-          <li>Interdisciplinary Collaboration and Projects!</li>
-          <li>Career Support Platform!</li>
-          <li><span class="rainbow">Snacks!</span></li>
-        </ul>
-        <div id="socials">
-          <img src="LU6.gif">
+    <div id="allContainer">
+      <div id="boxToFlip">
+        <div class="textBox" id="frontface">
+          <div id="what">
+            <h2>What will we be doing?</h2>
+            <ul>
+              <li>Student Run Workshops and Talks!</li>
+              <li>Qiskit and Q# Sessions!</li>
+              <li>Guest Speakers!</li>
+              <li>Interdisciplinary Collaboration and Projects!</li>
+              <li>Career Support Platform!</li>
+              <li><span class="rainbow">Snacks!</span></li>
+            </ul>
+            <div id="clickMe">
+              <img src="LU6.gif" onclick="flipContainer()">
+            </div>
+          </div>
+        </div>
+        <div class="textBox" id="backface">
+          <img src="backclr.gif" id="backBtn" onclick="flipContainer()">
+          <div id="socials">
+            <h2>Where and When?</h2>
+            <p> We typically meet Bi-Weekly on thursday nights 6-8pm in the Bedford Building! </p>
+            <p> Join/follow our socials as we put out a message with time/location a few days before each session! </p>
+            <img src="discord.png" width="100px">
+            <img src="instagram.png"  width="100px">
+            <img src="email9c.gif" height="70px" style="padding: 0 20px; padding-bottom: 18px;">
+          </div>
         </div>
       </div>
     </div>
