@@ -1,0 +1,78 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* diameter of the circle */
+    --d: 4px; 
+    
+    background : radial-gradient(
+      circle at 
+         var(--d) 
+         var(--d), 
+         
+      #e0d8d8 calc(var(--d) - 1px), 
+      #00000000 var(--d)
+    ) 
+    0 0 / 50px 50px;
+ }
+h1{ 
+    position: absolute;
+    padding: 0;
+    font-size: 4rem;
+}
+#chromaticAberation{
+    width: 1150px;
+    height: 250px;
+    background-color: #FAFAFA;
+    margin: 0 auto;
+    position: relative;
+    border: darkslategrey 4px dashed;
+}
+#blochsphere{
+    margin-right: 20px;
+    float: right;
+    border: none;
+    outline: none;
+}
+.textBox{
+    width: 1150px;
+    background-color: #FAFAFA;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 5px 0;
+    border: darkslategrey 4px dashed;
+}
+.textBox > div{
+    padding-left: 20px;
+}
+.rainbow{
+    animation: rainbow 5s;
+    animation-iteration-count: infinite;
+    font-weight: bold;
+    color: rgb(255, 0, 234);
+    font-style: italic;
+
+}
+@media only screen and (max-width: 600px) {
+    .textBox > div{
+        background: red;
+        font-size: 4em;
+    }
+    .textBox > h2{
+        font-size: 5em;
+    }
+    .textBox img{
+        width: 50vw;
+    }
+}
+
+@keyframes rainbow {
+    from {color: rgb(255, 0, 234);}
+    to {filter: hue-rotate(360deg)}
+  }
+
+#socials{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 25px;
+    cursor: pointer;
+}
